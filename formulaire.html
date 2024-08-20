@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <form name="calculer" method="GET" action="formulaire.php">
+        <div>
+            <label for="nb1">Nombre 1</label>
+            <input type="number" name="nb1">
+        </div>
+        <div>
+            <label for="operation">Opération</label>
+            <select name="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <div>
+            <label for="nb2">Nombre 2</label>
+            <input type="number" name="nb2">
+        </div>
+        <button type="submit" name="submit">Calculer</button>
+    </form>
+    <p>Le résultat de l'opération [NB1] [OPERATION] [NB2] est <b>[RESULTAT]</b></p>
+</body>
+</html>
